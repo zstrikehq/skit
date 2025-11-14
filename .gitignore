@@ -1,0 +1,25 @@
+/target
+/dist
+
+# Nix
+.direnv/
+result
+result-*
+
+# Local rustup/cargo (if using shell.nix approach)
+.rustup/
+.cargo/
+
+# Temporary files
+.tmp/
+
+# Editor configs (user-specific)
+.helix/
+
+# Safe files and environment files (should never be committed)
+*.safe
+.env
+.env.*
+
+# Safe keys (should never be committed)
+*.key

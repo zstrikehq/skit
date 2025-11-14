@@ -1,0 +1,37 @@
+pub mod cleanup_keys;
+pub mod copy;
+pub mod env;
+pub mod exec;
+pub mod export;
+pub mod get;
+pub mod import;
+pub mod init;
+pub mod keys;
+pub mod ls;
+pub mod print;
+pub mod remember_safekey;
+pub mod rm;
+pub mod rotate;
+pub mod set;
+pub mod ssm;
+pub mod status;
+pub mod template;
+
+// Re-export all command functions
+pub use cleanup_keys::cleanup_keys;
+pub use copy::copy;
+pub use env::env;
+pub use exec::exec;
+pub use export::export;
+pub use get::get;
+pub use import::import;
+pub use init::init;
+pub use keys::keys;
+pub use ls::ls;
+pub use print::print;
+pub use remember_safekey::{remember_safekey, remember_safekey_with_password_quiet};
+pub use rm::rm;
+pub use rotate::rotate;
+pub use set::set;
+pub use ssm::ssm_pull;
+pub use status::status;
